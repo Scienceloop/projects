@@ -1,0 +1,5 @@
+bill= int(input("Enter your bill amount: "))
+people= int(input("Between how many people would you like to split the bill?: "))
+tip= int(input("Enter your tip amount (in percentage): "))
+bill_share= (bill/people)*((100+tip)*0.01)
+print(f"Each person should pay {round(bill_share, 2)}")
